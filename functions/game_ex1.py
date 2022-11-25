@@ -9,5 +9,14 @@ def draw():
     screen.fill('white')
     p.draw()                       # two functions in gaming program w/o which it doesn't run that are draw and update function
     c.draw()
+    print('drawing')
+
+def update():
+    print('updating')
+    p.x-=2
+    p.angle= -10
+    if p.x<0:
+        p.x=WIDTH
+    print(p.x,p.y)
 
 pgzrun.go()
